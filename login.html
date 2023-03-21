@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h1>Fill this form</h1>
+    <form >
+        <legend></legend>
+        <label for="Email">Email address:</label>
+        <input 
+            type="Email" 
+            name="email" 
+            id="Email"
+            required>
+    <br>
+        <label for="password">Password:</label>
+        <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            required>
+    <br>
+        <input 
+            type="submit" 
+            value="Submit" 
+            id="submit-colon">
+    </form>
+    <script>
+        const submitColon = document.getElementById('submit-colon');
+
+        submitColon.addEventListener('click', function() {
+            const form = document.querySelector('form');
+            if (form.checkValidity()) {
+                alert('successful')
+            }
+        });
+    </script>
+</body>
+</html>
