@@ -1,0 +1,21 @@
+body {
+    background-color:white;
+    font-family:sans-serif;
+}
+h1{
+    color:rgb(9, 9, 8);
+    text-align: center;
+}
+input{
+    margin-bottom: 10px;
+    margin-left: 9px;
+}
+label{
+    font-size: medium; 
+ }
+ 
+ #submit-colon{
+     background-color:rgb(213, 201, 185);
+     color:black;
+     font-size: medium;
+ }
